@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "_Menu.cshtml";
+    Page.Title = "Админы";
+}
+@using SundayStarcraft.Ioc;
+@using SundayStarcraft.Entities;
+
+@if (IsPost)
+{
+    string name = (string)Request["Name"];
+    string login = (string)Request["Login"];
+    string password = (string)Request["Password"];
+    var admin = new Admin { Name = name, Login = login, Password = password };
+
+    if (name != null)
+    {
+        AdminIoc.AdminLogic.Add(admin);
+    }
+    int adminid;
+    Int32.TryParse(Request["AdminID"], out adminid);
+    AdminIoc.AdminLogic.DeleteById(adminid);
+    Response.Redirect("Admin");
+}
+else
+{
+    var adminLogic = AdminIoc.AdminLogic;
+    var admin = adminLogic.GetByID(1);
+    var admins = adminLogic.GetAll();
+
+    <h1>Админы</h1>
+    <div class="spisok">
+        <label>Текущмй админ</label>
+        <div>@admin.AdminID @admin.Name @admin.Login @admin.Password</div>
+
+        <p>Список админов</p>
+        <div>AdminID Name Login Password</div>
+        @foreach (var item in admins)
+        {
+        <div>@item.AdminID @item.Name @item.Login @item.Password</div>
+        }
+    </div>
+    
+<div>
+    <label>Удалить админа</label>
+    <form method="post" action="~/Admin.cshtml">
+        <input type="text" name="AdminID" id="inputID">
+        <button type="submit">Удалить</button>
+    </form>
+</div>
+
+    <label>Добавить админа</label>
+    <div>
+        <form method="post" action="~/Admin.cshtml">
+            <div>
+                <label>Введите Имя, Логин и Пароль</label>
+            </div>
+            <div>
+                <p>Name</p><input type="text" name="Name" id="inputName">
+            </div>
+            <div>
+                <p>Login</p><input type="text" name="Login" id="inputLogin">
+            </div>
+            <div>
+                <p>Password</p> <input type="text" name="Password" id="inputPassword">
+            </div>
+            <button type="submit">Готов</button>
+
+        </form>
+    </div>
+}

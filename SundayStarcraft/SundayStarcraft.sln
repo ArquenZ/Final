@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundayStarcraft", "SundayStarcraft.csproj", "{C80E286C-829C-45AE-90D6-F24B9D255E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundayStarcraft.BLL", "..\SundayStarcraft.BLL\SundayStarcraft.BLL.csproj", "{75032A15-B10A-41EA-AE3A-68DCE74E4B18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundayStarcraft.BLL.Interfaces", "..\SundayStarcraft.BLL.Interfaces\SundayStarcraft.BLL.Interfaces.csproj", "{59E456EE-A610-450C-ABBC-21CEACC7BB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundayStarcraft.DAL.Interfaces", "..\SundayStarcraft.DAL.Interfaces\SundayStarcraft.DAL.Interfaces.csproj", "{17C32B6B-D8BA-407D-A119-FA9BCA7CA8BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundayStarcraft.DAL", "..\SundayStarcraft.DAL\SundayStarcraft.DAL.csproj", "{5D004A0E-DD0D-46FA-8530-532F0C895DB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{4644F173-CA57-4951-9F21-2B2F9380C854}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{32607F5E-4484-43CC-9ACD-6821B34E045A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PL", "PL", "{CFBAB904-D431-4B1A-B04D-CF72D21CE997}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9184B0F6-3CA6-4F8A-BDAB-E07EE0509B72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundayStarcraft.Entities", "..\SundayStarcraft.Entities\SundayStarcraft.Entities.csproj", "{7AB8D56C-B465-4E06-BD7F-8054C99C62AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundayStarcraft.Ioc", "..\SundayStarcraft.Ioc\SundayStarcraft.Ioc.csproj", "{7C25DD5E-F21F-4476-942E-E47C85FA80B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{5EF31C70-E932-400D-A0B5-C55F8581FF5F}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\ОФМ\Desktop\SQL\DeleteAdminById.sql = C:\Users\ОФМ\Desktop\SQL\DeleteAdminById.sql
+		C:\Users\ОФМ\Desktop\SQL\DeletePlayerById.sql = C:\Users\ОФМ\Desktop\SQL\DeletePlayerById.sql
+		C:\Users\ОФМ\Desktop\SQL\GetAdminById.sql = C:\Users\ОФМ\Desktop\SQL\GetAdminById.sql
+		C:\Users\ОФМ\Desktop\SQL\GetPlayerById.sql = C:\Users\ОФМ\Desktop\SQL\GetPlayerById.sql
+		C:\Users\ОФМ\Desktop\SQL\InsertAdmin.sql = C:\Users\ОФМ\Desktop\SQL\InsertAdmin.sql
+		C:\Users\ОФМ\Desktop\SQL\InsertPlayer.sql = C:\Users\ОФМ\Desktop\SQL\InsertPlayer.sql
+		C:\Users\ОФМ\Desktop\SQL\SelectAllAdmin.sql = C:\Users\ОФМ\Desktop\SQL\SelectAllAdmin.sql
+		C:\Users\ОФМ\Desktop\SQL\SelectAllPlayer.sql = C:\Users\ОФМ\Desktop\SQL\SelectAllPlayer.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C80E286C-829C-45AE-90D6-F24B9D255E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80E286C-829C-45AE-90D6-F24B9D255E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80E286C-829C-45AE-90D6-F24B9D255E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80E286C-829C-45AE-90D6-F24B9D255E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75032A15-B10A-41EA-AE3A-68DCE74E4B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75032A15-B10A-41EA-AE3A-68DCE74E4B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75032A15-B10A-41EA-AE3A-68DCE74E4B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75032A15-B10A-41EA-AE3A-68DCE74E4B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E456EE-A610-450C-ABBC-21CEACC7BB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E456EE-A610-450C-ABBC-21CEACC7BB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E456EE-A610-450C-ABBC-21CEACC7BB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E456EE-A610-450C-ABBC-21CEACC7BB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C32B6B-D8BA-407D-A119-FA9BCA7CA8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C32B6B-D8BA-407D-A119-FA9BCA7CA8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C32B6B-D8BA-407D-A119-FA9BCA7CA8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C32B6B-D8BA-407D-A119-FA9BCA7CA8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D004A0E-DD0D-46FA-8530-532F0C895DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D004A0E-DD0D-46FA-8530-532F0C895DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D004A0E-DD0D-46FA-8530-532F0C895DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D004A0E-DD0D-46FA-8530-532F0C895DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB8D56C-B465-4E06-BD7F-8054C99C62AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB8D56C-B465-4E06-BD7F-8054C99C62AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB8D56C-B465-4E06-BD7F-8054C99C62AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB8D56C-B465-4E06-BD7F-8054C99C62AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C25DD5E-F21F-4476-942E-E47C85FA80B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C25DD5E-F21F-4476-942E-E47C85FA80B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C25DD5E-F21F-4476-942E-E47C85FA80B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C25DD5E-F21F-4476-942E-E47C85FA80B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C80E286C-829C-45AE-90D6-F24B9D255E6A} = {CFBAB904-D431-4B1A-B04D-CF72D21CE997}
+		{75032A15-B10A-41EA-AE3A-68DCE74E4B18} = {4644F173-CA57-4951-9F21-2B2F9380C854}
+		{59E456EE-A610-450C-ABBC-21CEACC7BB80} = {4644F173-CA57-4951-9F21-2B2F9380C854}
+		{17C32B6B-D8BA-407D-A119-FA9BCA7CA8BD} = {32607F5E-4484-43CC-9ACD-6821B34E045A}
+		{5D004A0E-DD0D-46FA-8530-532F0C895DB8} = {32607F5E-4484-43CC-9ACD-6821B34E045A}
+		{7AB8D56C-B465-4E06-BD7F-8054C99C62AB} = {9184B0F6-3CA6-4F8A-BDAB-E07EE0509B72}
+		{7C25DD5E-F21F-4476-942E-E47C85FA80B1} = {9184B0F6-3CA6-4F8A-BDAB-E07EE0509B72}
+		{5EF31C70-E932-400D-A0B5-C55F8581FF5F} = {32607F5E-4484-43CC-9ACD-6821B34E045A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08862976-F984-459A-ACB7-F73B6338E242}
+	EndGlobalSection
+EndGlobal
